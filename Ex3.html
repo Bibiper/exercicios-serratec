@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 01 10-07-2020 - Tarde</title>
+</head>
+<body>
+
+<p>Click the button to display if user has the necessary skill:</p>
+
+<button onclick="temHabilidade()">Iniciar</button>
+
+<script>
+            
+
+    function temHabilidade(){
+        var skills = [];
+        for(i = 0; i < 3; i++){
+            skills.push(prompt('Digite seus principais skills:'));
+        }    
+        var js = skills.indexOf("javascript");
+            if(js >= 0){
+                document.write(`${'Voce possui o skill'}`);
+            }else{
+                document.write(`${'Voce não possui o skill'}`);
+            }    
+    }    
+         
+</script>
+
+
+
+</body>
+</html> 
+

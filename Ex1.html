@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 01 10-07-2020 - Tarde</title>
+</head>
+<body>
+    <script>
+        
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+
+
+        function retornarEnderecoDoUsuario(endereco){
+            document.write(`O usuário mora em ${endereco.uf} / ${endereco.cidade}, no bairro ${endereco.bairro}, na ${endereco.rua} com n ${endereco.numero}`);
+        }
+
+
+        retornarEnderecoDoUsuario(endereco);
+
+    </script>
+</body>
+</html> 

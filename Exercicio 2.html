@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 08-07-2020 - Manha</title>
+</head>
+<body>
+
+    <h1 style="background-color:black; color:orangered" /h1>
+
+
+<script>
+        
+        /*
+            Entender:
+            Problema: Criar um sistema que receba 3 notas
+            Deve devolver as notas, a soma delas e a media das mesmas
+            Se a media for menor que 60, informar ao usuario que ele foi  reprovado
+            Caso contrario, deve informar que ele esta aprovado.
+
+            Planejar:
+            1 Criar uma forma de receber 3 notas
+                1.1 Utilizar prompt e parseInt
+            2 Deve devolver as notas informadas
+                2.1 Utilizar document.write
+            3 Deve somar as notas e mostrar
+            4 Deve calcular a media e mostrar
+            5 Verificar se a media é maior que 60
+                5.1 Se for, mostrar mensagem que ele esta reprovado
+                5.2 Se nao for, mostrar mensagem que ele esta aprovado.
+
+            Executar:
+
+        */
+
+        var primeiraNota = parseInt(prompt('Digite a primeira nota:'));
+        var segundaNota = parseInt(prompt('Digite a segunda nota'));
+        var terceiraNota = parseInt(prompt('Digite a terceira nota'));
+        const pularLinha = '<br>';
+
+        document.write('Primeira nota: ' + primeiraNota + pularLinha);
+        document.write('Segunda nota: ' + segundaNota + pularLinha);
+        document.write('Terceira nota: ' + terceiraNota + pularLinha);
+                
+        document.write(pularLinha);
+
+        var soma = primeiraNota + segundaNota + terceiraNota;
+        document.write('A soma das notas é: ' + soma + pularLinha);
+
+        var media = soma/3;
+        document.write('A media das notas é: ' + media + pularLinha);
+
+        document.write(pularLinha);
+
+        if (soma < 60){
+            document.write('REPROVADO!')
+        }
+
+        else{
+            document.write('APROVADO!')
+        }
+
+        /*
+            ifs e elses ifs
+            var minhaIdade = 30;
+
+            if(minhaIdade <18){
+                document.write('Sou menor de idade')
+            }else if(minhaIdade >= 18 && minhaIdade <= 3){
+                document.write('Sou novinho!')
+            }else if(minhaIdade >30 && minhaIdade <= 45){
+                document.write('To chegando lá...');
+            }else{
+                document.write('Já sou da 2a idade.')
+            }
+        */    
+
+        //  for(var i = 0; i < 10; i++){
+        //      document.write('Sou a posição -' + i);
+        //  } 
+
+            ///var cont = 0;
+
+            ///while(cont < 10){
+            ///    document.write('Sou a posição -' + cont);
+            ///    cont++;
+            ///}
+
+        /*        
+            var notaDoProfessor = parseInt(prompt('Por gentileza, avalie o seu professor. Informe uma nota de 0 a 100.'));
+
+            if(isNan(notaDoProfessor)){
+                notaDoProfessor = -1;
+            }
+
+            while(notaDoProfessor < 0){
+                notaDoProfessor = parseInt(prompt('Por gentileza, avalie o seu professor. Informe uma nota de 0 a 100'));
+
+                if(isNan(notaDoProfessor)){
+                    notaDoProfessor = -1;
+                }
+            }
+
+            document.write('A nota que você deu ao professor é: ' +notaDoProfessor);
+        */        
+        /*
+            var cont = 0;
+            do{
+                document.write('Fui executado');
+            }while(cont > 0)
+        */       
+
+            console.log('Saiu do looping')
+
+</script>
+</body>
+</html>

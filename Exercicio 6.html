@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10-07-2020 - Manha</title>
+</head>
+<body>
+    <script>
+
+        /*
+            Objetos Javascript => É uma forma de representação de coisas ou objetos reais em forma de código.
+
+            Exemplo de função no Javascript
+            function mostraAlerta(){
+                Aqui dentro é o código que será executado quando essa função for chamada.
+            }
+        */        
+        //Exemplo de uma função void que não tem parâmetro:
+        
+        /*    
+            function mostraAlerta(){
+                alert('Fui chamado por outra função!');
+            }
+            
+        //Exemplo de uma função void que tem parametro:
+        
+            function mostraAlerta2(mensagem){
+                alert(mensagem);
+            }
+        */    
+            function retornarSeONumeroEParOuImpar(numero){
+                if(numero % 2 != 0){
+                    document.write(`Você digitou o numero ${numero} que é Impar`);
+                }else{
+                    document.write(`Voce digitou o numero ${numero} que é Par`);
+                }
+            }        
+
+            num = parseInt(prompt('Digite um numero'));
+            retornarSeONumeroEParOuImpar(num);
+
+            
+            
+
+
+    </script> 
+
+</body> 
+</html>      

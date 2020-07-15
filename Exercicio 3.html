@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 08-07-2020 - Tarde</title>
+</head>
+<body>
+    <script>
+
+        var num = parseInt(prompt('Digite o numero que deseja multiplicar:'));
+        var cont = parseInt(prompt('Quer multiplicar até quanto?'));
+
+        for(var i = 0; i <= cont; i++){
+            document.write(num + ' x ' + i + ' = ' + i * num);
+                if((num * i) % 2 == 0){
+                    document.write(' O numero é par' + '<br>');
+                }else{
+                    document.write(' O numero é impar.' + '<br>');
+                }    
+        }
+        
+      
+
+
+        var n = parseInt(prompt('Digite um numero:'));
+        var c = parseInt(prompt('Quer multiplicar ate quanto?'));
+        var i = 0
+        
+        while(i <= c){
+            document.write(n + 'x' + i + '=' + n * i);
+                if((n * i) % 2 == 0){
+                    document.write(' O numero é par' + '<br>');
+                }else{
+                    document.write(' O numero é impar.' + '<br>');
+                }    
+            i++;    
+        }
+       
+
+    
+
+    </script>
+</body>    
+</html>
